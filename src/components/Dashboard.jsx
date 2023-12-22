@@ -8,7 +8,7 @@ import AlertsWidget from "./widgets/AlertsWidget";
 import NotesWidget from "./widgets/NotesWidget";
 
 const Dashboard = () => {
-  const [activeWidget, setActiveWidget] = useState("temperature");
+  const [activeWidget, setActiveWidget] = useState(null);
 
   const handleWidgetClick = (widgetName) => {
     setActiveWidget(widgetName);
