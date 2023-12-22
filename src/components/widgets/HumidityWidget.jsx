@@ -1,8 +1,8 @@
 const HumidityWidget = () => {
   return (
     <>
-      <div className="flex justify-between items-center max-w-2xl mx-auto">
-        <div className=" flex justify-center items-center text-center -m-5">
+      <div className="flex md:flex-row flex-col md:justify-between justify-center items-center max-w-2xl mx-auto md:mt-0 mt-16 md:gap-0 gap-10">
+        <div className="flex justify-center items-center text-center -m-5">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             className="icon icon-tabler icon-tabler-droplet-exclamation"
@@ -20,7 +20,9 @@ const HumidityWidget = () => {
             <path d="M19 16v3" />
             <path d="M19 22v.01" />
           </svg>
-          <h2 className="font-bold text-4xl text-neutral-400">Humedad</h2>
+          <h2 className="font-bold md:text-4xl text-2xl text-neutral-400">
+            Humedad
+          </h2>
         </div>
         <div className="flex justify-center items-center gap-5">
           <button className="font-bold text-xl text-neutral-300 border-2 border-transparent hover:border-sky-500 transition-all rounded-md p-2">

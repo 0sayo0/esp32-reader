@@ -43,7 +43,7 @@ const Dashboard = () => {
   return (
     <>
       {!activeWidget && (
-        <div className=" grid grid-cols-3 justify-end items-center gap-14">
+        <div className="md:grid flex md:grid-cols-3 flex-col justify-center items-center md:gap-14 gap-8 md:mb-0 mb-10">
           <button
             className="flex flex-col bg-[#414858] hover:shadow-lg hover:shadow-sky-700 hover:-translate-y-3 duration-200 justify-center items-center h-52 w-72 rounded-xl"
             onClick={() => handleWidgetClick("temperature")}
@@ -197,7 +197,7 @@ const Dashboard = () => {
         </div>
       )}
       {activeWidget && (
-        <div className="bg-[#414858] h-[500px] w-[1000px] rounded-xl p-5">
+        <div className="bg-[#414858] md:h-[500px] h-[1000px] md:w-[1000px] w-[350px] md:rounded-xl rounded-lg p-5 md:mx-0 mx-auto md:mb-0 mb-10">
           <button
             className="flex justify-center items-center text-neutral-300 hover:text-sky-500 transition-all"
             onClick={handleBackClick}

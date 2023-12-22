@@ -1,11 +1,11 @@
 const ParticlesWidget = () => {
   return (
     <>
-      <div className="flex justify-between items-center max-w-2xl mx-auto">
-        <div className=" flex justify-center items-center text-center -m-5">
+      <div className="flex md:flex-row flex-col md:justify-between justify-center items-center max-w-2xl mx-auto md:mt-0 mt-16 md:gap-0 gap-10">
+        <div className="flex justify-center items-center text-center -m-5">
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            class="icon icon-tabler icon-tabler-topology-star-ring-3"
+            className="icon icon-tabler icon-tabler-topology-star-ring-3"
             width="68"
             height="68"
             viewBox="0 0 24 24"
@@ -36,7 +36,9 @@ const ParticlesWidget = () => {
             <path d="M7 7l-2 3" />
             <path d="M5 14l2 3" />
           </svg>
-          <h2 className="font-bold text-4xl text-neutral-400">Partículas</h2>
+          <h2 className="font-bold md:text-4xl text-2xl text-neutral-400">
+            Partículas
+          </h2>
         </div>
         <div className="flex justify-center items-center gap-5">
           <button className="font-bold text-xl text-neutral-300 border-2 border-transparent hover:border-sky-500 transition-all rounded-md p-2">

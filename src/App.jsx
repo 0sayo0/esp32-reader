@@ -16,7 +16,7 @@ function App() {
   return (
     <>
       <Header />
-      <div className="flex justify-between items-center max-w-7xl mx-auto mt-10">
+      <div className="md:flex md:justify-between md:items-center max-w-7xl mx-auto mt-6">
         <Navbar setActiveView={setActiveView} resetDashboard={resetDashboard} />
         {activeView === "dashboard" && <Dashboard key={key} />}
       </div>
